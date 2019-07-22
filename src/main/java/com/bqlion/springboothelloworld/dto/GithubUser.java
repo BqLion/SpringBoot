@@ -3,11 +3,12 @@ package com.bqlion.springboothelloworld.dto;
 /* *
  * Created by BqLion on 2019/7/18
  */
-public class GithubUser {
+import lombok.Data;
 
+@Data
+public class GithubUser {
     private String name;
-    private long id;
-    private String bio;
+    private Long id;
 
     public String getName() {
         return name;
@@ -17,11 +18,11 @@ public class GithubUser {
         this.name = name;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -32,4 +33,15 @@ public class GithubUser {
     public void setBio(String bio) {
         this.bio = bio;
     }
+
+    public String getAvatarUrl() {
+        return avatarUrl;
+    }
+
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
+    }
+
+    private String bio;
+    private String avatarUrl;
 }

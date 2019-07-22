@@ -1,14 +1,20 @@
 package com.bqlion.springboothelloworld.dto;
-
+import lombok.Data;
 /* *
  * Created by BqLion on 2019/7/17
  */
+
+
+/**
+ * Created by codedrinker on 2019/4/24.
+ */
+@Data
 public class AccesstokenDTO {
-     private String client_id;
-     private String client_secret;
-     private String code;
-     private String redirect_url;
-     private String state;
+    private String client_id;
+    private String client_secret;
+    private String code;
+    private String redirect_uri;
+    private String state;
 
     public String getClient_id() {
         return client_id;
@@ -34,12 +40,12 @@ public class AccesstokenDTO {
         this.code = code;
     }
 
-    public String getRedirect_url() {
-        return redirect_url;
+    public String getRedirect_uri() {
+        return redirect_uri;
     }
 
-    public void setRedirect_url(String redirect_url) {
-        this.redirect_url = redirect_url;
+    public void setRedirect_uri(String redirect_uri) {
+        this.redirect_uri = redirect_uri;
     }
 
     public String getState() {
