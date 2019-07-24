@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.bqlion.springboothelloworld.dto.AccesstokenDTO;
 import com.bqlion.springboothelloworld.dto.GithubUser;
 import okhttp3.*;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
