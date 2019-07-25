@@ -23,14 +23,16 @@ public class IndexController {
     @GetMapping ("/")
     public String index(HttpServletRequest request){
         Cookie[] cookies = request.getCookies();
-        for (Cookie cookie : cookies) {
-            if(cookie.getName() .equals("token")){
-                String token = cookie.getValue();
-                User user  = UserMapper.findByToken(token);
-                if(user != null) {
-                    request.getSession().setAttribute("user", user);
+       if(cookies != null) {                                            //加一句判断。昨天正常今天就不能访问主页了，抛nullpointer exception。
+            for (Cookie cookie : cookies) {                      //估计是清理cookies后首次访问没有cookies，所以会抛出异常。
+                if (cookie.getName().equals("token")) {     //加后解决
+                    String token = cookie.getValue();
+                    User user = UserMapper.findByToken(token);
+                    if (user != null) {
+                        request.getSession().setAttribute("user", user);
+                    }
+                    break;
                 }
-                break;
             }
         }
         return "index";
