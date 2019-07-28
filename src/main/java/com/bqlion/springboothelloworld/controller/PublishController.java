@@ -39,37 +39,42 @@ public class PublishController {
             @RequestParam("tag") String tag,
             HttpServletRequest request,
             Model model) {
+
         model.addAttribute("title", title);
         model.addAttribute("description", description);
         model.addAttribute("tag", tag);
 
-        User user = null;
-        Cookie[] cookies = request.getCookies();
-        if (cookies != null) {
-            for (Cookie cookie : cookies) {
-                if (cookie.getName().equals("token")) {
-                    String token = cookie.getValue();
-
-                    user = UserMapper.findByToken(token);
-                    if (user != null) {
-                        request.getSession().setAttribute("user", user);
-                    }
-                    break;
-                }
-            }
+        if(title == null || title== "") {
+            model.addAttribute("error", "标题不能为空");
+            return "publish";
         }
+
+        if(title == null || title== "") {
+            model.addAttribute("error", "标题不能为空");
+            return "publish";
+        }
+
+        if(title == null || title== "") {
+            model.addAttribute("error", "标题不能为空");
+            return "publish";
+        }
+
+        User user = (User) request.getSession().getAttribute("user");
         if (user == null) {
             model.addAttribute("error", "用户未登录");
             return "publish";
         }
+        /**
+         * 以上是把各种参数为空的可能性都排除掉，类似于提前排除掉数组为空的bug
+         */
 
         Question question = new Question();     //question对象接受各种数据
         question.setTitle(title);
         question.setDescription(description);
         question.setTag(tag);
         question.setCreator(user.getId());
-        question.setGmt_create(System.currentTimeMillis());
-        question.setGmt_modified(question.getGmt_create());
+        question.setGmtCreate(System.currentTimeMillis());
+        question.setGmtModified(question.getGmtCreate());
         QuestionMapper.create(question);          //mapper把数据写入数据库
         return "redirect:/";                //发布成功就返回首页
     }

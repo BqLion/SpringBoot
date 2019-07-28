@@ -8,27 +8,14 @@ public class Question {
     private Integer id;
     private String title;
     private String description;
-    private long gmt_create;
-    private long gmt_modified;
+    private long gmtCreate;
+    private long gmtModified;
     private Integer creator;
     private String tag;
     private Integer viewCount;
-    private Integer commentCount;
-    private Integer likeCount;
-
-
-
 
     public Integer getId() {
         return id;
-    }
-
-    public Integer getCreator() {
-        return creator;
-    }
-
-    public void setCreator(Integer creator) {
-        this.creator = creator;
     }
 
     public void setId(Integer id) {
@@ -51,20 +38,36 @@ public class Question {
         this.description = description;
     }
 
-    public long getGmt_create() {
-        return gmt_create;
+    public long getGmtCreate() {
+        return gmtCreate;
     }
 
-    public void setGmt_create(long gmt_create) {
-        this.gmt_create = gmt_create;
+    public void setGmtCreate(long gmtCreate) {
+        this.gmtCreate = gmtCreate;
     }
 
-    public long getGmt_modified() {
-        return gmt_modified;
+    public long getGmtModified() {
+        return gmtModified;
     }
 
-    public void setGmt_modified(long gmt_modified) {
-        this.gmt_modified = gmt_modified;
+    public void setGmtModified(long gmtModified) {
+        this.gmtModified = gmtModified;
+    }
+
+    public Integer getCreator() {
+        return creator;
+    }
+
+    public void setCreator(Integer creator) {
+        this.creator = creator;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
     }
 
     public Integer getViewCount() {
@@ -91,11 +94,10 @@ public class Question {
         this.likeCount = likeCount;
     }
 
-    public String getTag() {
-        return tag;
-    }
+    private Integer commentCount;
+    private Integer likeCount;
 
-    public void setTag(String tag) {
-        this.tag = tag;
-    }
+
 }
+
+
