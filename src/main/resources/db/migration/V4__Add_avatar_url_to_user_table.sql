@@ -1,2 +1,2 @@
 alter table USER
-	add avatar_url varchar(100);
+	add AVATARURL varchar(100);
