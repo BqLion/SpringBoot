@@ -10,6 +10,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.net.Inet4Address;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,14 +25,32 @@ public class QuestionService {
     @Autowired
     private UserMapper userMapper;             //组装Quesiton和user的model所以要注入依赖
 
-
-
     public PaginationDTO list(Integer page, Integer size) {
-    Integer offset = size * (page - 1);
-    List<Question>questions  = questionMapper.list(offset,size);
-    List<QuestionDTO>questionDTOList = new ArrayList<>();
+        PaginationDTO paginationDTO = new PaginationDTO();
+        Integer totalPage;
+        Integer totalCount = questionMapper.count();
 
-    PaginationDTO paginationDTO = new PaginationDTO();
+
+        if(totalCount % size == 0){
+            totalPage  = totalCount / size;
+        }
+        else
+        {
+            totalPage = totalCount / size + 1;
+        }
+
+        if(page < 1 ){
+            page = 1;
+        }
+        if(page > totalPage){
+            page = totalPage;
+        }
+        paginationDTO.setPagination(totalPage,page);
+
+        Integer offset = size * (page - 1);
+        List<Question>questions  = questionMapper.list(offset,size);
+        List<QuestionDTO>questionDTOList = new ArrayList<>();
+
         for (Question question : questions) {               //这个循环完成question与questionDTO的组装
             User user = userMapper.findById(question.getCreator());
             QuestionDTO questionDTO = new QuestionDTO();
@@ -39,13 +58,45 @@ public class QuestionService {
             questionDTO.setUser(user);
             questionDTOList.add(questionDTO);
     }
+        paginationDTO.setQuesitions(questionDTOList);  //如何生产出一个paginiationDTO？专门在数据结构中写一个set函数
 
+        return paginationDTO;
+    }
+
+    public PaginationDTO list(Integer userId, Integer page, Integer size) {
+        PaginationDTO paginationDTO = new PaginationDTO();
+        Integer totalPage;
+        Integer totalCount = questionMapper.countByUserId(userId);
+
+
+        if(totalCount % size == 0){
+            totalPage  = totalCount / size;
+        }
+        else
+        {
+            totalPage = totalCount / size + 1;
+        }
+
+        if(page < 1 ){
+            page = 1;
+        }
+        if(page > totalPage){
+            page = totalPage;
+        }
+        paginationDTO.setPagination(totalPage,page);
+
+        Integer offset = size * (page - 1);
+        List<Question>questions  = questionMapper.listByUserId(userId,offset,size);
+        List<QuestionDTO>questionDTOList = new ArrayList<>();
+
+        for (Question question : questions) {               //这个循环完成question与questionDTO的组装
+            User user = userMapper.findById(question.getCreator());
+            QuestionDTO questionDTO = new QuestionDTO();
+            BeanUtils.copyProperties(question,questionDTO);
+            questionDTO.setUser(user);
+            questionDTOList.add(questionDTO);
+        }
         paginationDTO.setQuesitions(questionDTOList);   //questionDTO与paginationDTO的组装
-        Integer totalCount = questionMapper.count();
-        paginationDTO.setPagination(totalCount,page,size);  //如何生产出一个paginiationDTO？专门在数据结构中写一个set函数
-                                                                                                                                            //这个set函数只需要总数据数，页码和每页个数
-                                                                                                                                            //便可生成所有所需数据
-                                                                                                                                            //数据层面的逻辑在数据内部写清楚，不要拿到业务层面来
         return paginationDTO;
     }
 }

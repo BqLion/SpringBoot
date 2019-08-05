@@ -46,8 +46,8 @@ public class IndexController {
                     break;
                 }
             }
-        PaginationDTO paginationDTO = questionService.list(page,size);        //这里希望返回一个QuestionDTO,一般DTO用mapper返回，
-        model.addAttribute("paginationDTO", paginationDTO);                    //QuestionMapper只能返回Question model.
+        PaginationDTO pagination = questionService.list(page,size);        //这里希望返回一个QuestionDTO,一般DTO用mapper返回，
+        model.addAttribute("pagination", pagination );                    //QuestionMapper只能返回Question model.
         return "index";                                                                         //加上了user的QuesitonDTO 由Question model和user model组合而成
     }
     }

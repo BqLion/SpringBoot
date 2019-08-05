@@ -1,6 +1,8 @@
 package com.bqlion.springboothelloworld.dto;
 
 import lombok.Data;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /* *
@@ -15,23 +17,19 @@ public class PaginationDTO {
     private boolean showNext;
     private boolean showEndPage;              //四个判断，确定是否显示前/后/最前/最后 四个按钮。
     private Integer page;
-    private List<Integer> pages;                  //前页/后页之间那个 1 2 3 4 5列表
+    private List<Integer> pages = new ArrayList<>();                  //前页/后页之间那个 1 2 3 4 5列表
+    private Integer totalPage;
 
-    public void setPagination(Integer totalCount, Integer page, Integer size) {
-        Integer totalPage;
-
-        if (totalCount % size == 0) {             //把数据总量转换成页面数量
-            totalPage = totalCount % size;
-        } else {
-            totalPage = totalCount % size + 1;
-        }
+    public void setPagination(Integer totalPage,Integer page) {
+        this.totalPage = totalPage;
+        this.page = page;
 
         pages.add(page);
         for(int i = 1;i <= 3; i++){
             if(page - i > 0){
-                pages.add(0,page - i);          //如果page不是1,2,3，将他加入进队伍
+                pages.add(0,page - i    );          //如果page不是1,2,3，将他加入进队伍
             }
-            if(page + i <= totalCount){
+            if(page + i <= totalPage){
                 pages.add(page+ i);                                         //如果page不是最后三个，也加进来
             }
         }
