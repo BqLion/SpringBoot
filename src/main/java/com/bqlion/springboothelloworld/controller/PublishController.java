@@ -1,7 +1,6 @@
 package com.bqlion.springboothelloworld.controller;
 
 import com.bqlion.springboothelloworld.mapper.QuestionMapper;
-import com.bqlion.springboothelloworld.mapper.UserMapper;
 import com.bqlion.springboothelloworld.model.Question;
 import com.bqlion.springboothelloworld.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
 
@@ -23,9 +21,6 @@ public class PublishController {
 
     @Autowired
     private QuestionMapper QuestionMapper;
-
-    @Autowired
-    private UserMapper UserMapper;
 
     @GetMapping("/publish")
     public String publish() {
