@@ -152,3 +152,9 @@ Xxx
     ```
 * AbstractBaseServiceAdapter 类实现了 IBaseService 接口中的方法，并提供 frameDaoImpl 实例操作数据库。如果该类中没有提供所需方法，可以使用 frameDaoImpl 提供的方法直接调用 mapper的方法。
 * flyway 版本号从0.0.1开始，规则为V0.0.1_1__XXXX.sql，1代表这个版本的脚本顺序，xxxx代表文件执行了哪些操作
+
+MybatisGenerator:
+
+You can pass parameters to the goal with standard Maven command line properties. For example:
+
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate

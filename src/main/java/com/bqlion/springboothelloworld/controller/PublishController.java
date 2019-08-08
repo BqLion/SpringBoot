@@ -24,6 +24,11 @@ public class PublishController {
     @Autowired
     private QuestionService questionService;
 
+    @GetMapping("/publish")
+    public String publish(){
+        return "publish";
+    }
+
     @GetMapping("/publish/{id}")
     public String edit(@PathVariable(name = "id")Integer id,
                         Model model){
@@ -32,11 +37,6 @@ public class PublishController {
         model.addAttribute("description",question.getDescription());
         model.addAttribute("tag",question.getTag());
         model.addAttribute("id",question.getId());
-        return "publish";
-    }
-
-    @GetMapping("/publish")
-    public String publish(){
         return "publish";
     }
 
@@ -72,9 +72,6 @@ public class PublishController {
             model.addAttribute("error", "用户未登录");
             return "publish";
         }
-        /**
-         * 以上是把各种参数为空的可能性都排除掉，类似于提前排除掉数组为空的bug
-         */
 
         Question question = new Question();     //question对象接受各种数据
         question.setTitle(title);
