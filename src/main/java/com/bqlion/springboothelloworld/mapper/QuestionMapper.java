@@ -6,12 +6,8 @@ package com.bqlion.springboothelloworld.mapper;
  * 下边是可供本项目调用的函数名称
  */
 
-import com.bqlion.springboothelloworld.dto.QuestionDTO;
 import com.bqlion.springboothelloworld.model.Question;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -21,7 +17,6 @@ public interface QuestionMapper {
     void create(Question question);
 
     @Select("select * from question limit #{offset},#{size}")
-        //从偏移量offset开始，输出size个数据
     List<Question> list(@Param(value = "offset") Integer offset, @Param(value = "size") Integer size);
 
     @Select("select count(1) from question")
@@ -35,4 +30,7 @@ public interface QuestionMapper {
 
     @Select("select * from question where id = #{id}")
     Question getById(@Param("id")Integer id);
+
+    @Update("update question set title = #{title},description = #{description},gmt_modified = #{gmtModified},tag = #{tag} where id = #{id}")
+    void update(Question question);
 }

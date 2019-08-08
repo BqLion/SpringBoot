@@ -2,10 +2,10 @@ package com.bqlion.springboothelloworld.controller;
 
 import com.bqlion.springboothelloworld.dto.AccesstokenDTO;
 import com.bqlion.springboothelloworld.dto.GithubUser;
-import com.bqlion.springboothelloworld.mapper.UserMapper;
 import com.bqlion.springboothelloworld.model.User;
 import com.bqlion.springboothelloworld.provider.GithubProvider;
 
+import com.bqlion.springboothelloworld.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -27,7 +27,7 @@ public class AuthorizeController {
     private GithubProvider githubProvider;
 
     @Autowired
-    private UserMapper UserMapper;
+    private UserService UserService;
 
     @Value("0f24de62da15ff1798c1")
     private String clientId;
@@ -58,14 +58,22 @@ public class AuthorizeController {
             user.setToken(token);
             user.setName(githubUser.getName());
             user.setAccountId(String.valueOf(githubUser.getId()));
-            user.setGmtCreate(System.currentTimeMillis());
-            user.setGmtModified(user.getGmtCreate());
             user.setAvatarUrl((githubUser.getAvatarUrl()));
-            UserMapper.insert(user);
+            UserService.createOrUpdate(user);               //之前逻辑有误，如果是同一用户则不需要新建，只需更新即可
             response.addCookie(new Cookie("token", token));     //将userToken写入cookie中
             return "redirect:/";
         } else {
             return "redirect:/";
         }
+    }
+
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest request,
+                                    HttpServletResponse response){
+        request.getSession().removeAttribute("user");
+        Cookie cookie = new Cookie("token",null);
+        cookie.setMaxAge(0);
+        response.addCookie(cookie);
+        return "redirect:/";
     }
 }
