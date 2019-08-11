@@ -2,6 +2,7 @@ package com.bqlion.springboothelloworld.interceptor;
 
 import com.bqlion.springboothelloworld.mapper.UserMapper;
 import com.bqlion.springboothelloworld.model.User;
+import com.bqlion.springboothelloworld.model.UserExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -10,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /* *
  * Created by BqLion on 2019/8/6
@@ -27,9 +29,13 @@ public class SessionoInterceptor implements HandlerInterceptor {
             for (Cookie cookie : cookies) {                      //估计是清理cookies后首次访问没有cookies，所以会抛出异常。
                 if (cookie.getName().equals("token")) {     //加后解决
                     String token = cookie.getValue();
-                    User user = userMapper.findByToken(token);
-                    if (user != null) {
-                        request.getSession().setAttribute("user", user);
+                    UserExample userExample = new UserExample();
+                    userExample.createCriteria().
+                                    andTokenEqualTo(token);                     //userExample + createCriteria + andTokenEqual/between 等可从数据库返回一个符合条件的列表
+                    List<User> users = userMapper.selectByExample(userExample);
+
+                    if (users.size() != 0) {
+                        request.getSession().setAttribute("user", users.get(0));
                     }
                     break;
                 }

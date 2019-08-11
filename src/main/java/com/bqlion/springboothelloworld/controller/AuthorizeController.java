@@ -58,7 +58,7 @@ public class AuthorizeController {
             user.setToken(token);
             user.setName(githubUser.getName());
             user.setAccountId(String.valueOf(githubUser.getId()));
-            user.setAvatarUrl((githubUser.getAvatarUrl()));
+            user.setAvatarurl((githubUser.getAvatarUrl()));
             UserService.createOrUpdate(user);               //之前逻辑有误，如果是同一用户则不需要新建，只需更新即可
             response.addCookie(new Cookie("token", token));     //将userToken写入cookie中
             return "redirect:/";
