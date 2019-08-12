@@ -14,7 +14,6 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.crypto.Cipher;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,6 +22,7 @@ import java.util.List;
  */
 @Service
 public class QuestionService {
+
     @Autowired
     private QuestionMapper questionMapper;
 
@@ -136,5 +136,14 @@ public class QuestionService {
                 throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }
         }
+    }
+
+    public void incView(Integer id) {
+        Question question = questionMapper.selectByPrimaryKey(id);
+        Question updateQuestion  = new Question();
+        updateQuestion.setViewCount(question.getViewCount() +1 );
+        QuestionExample questionExample = new QuestionExample();
+        questionExample.createCriteria().andIdEqualTo(id);
+        questionMapper.updateByExampleSelective(updateQuestion,questionExample);
     }
 }
