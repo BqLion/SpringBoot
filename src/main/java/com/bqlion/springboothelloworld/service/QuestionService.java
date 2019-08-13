@@ -4,18 +4,22 @@ import com.bqlion.springboothelloworld.dto.PaginationDTO;
 import com.bqlion.springboothelloworld.dto.QuestionDTO;
 import com.bqlion.springboothelloworld.exception.CustomizeErrorCode;
 import com.bqlion.springboothelloworld.exception.CustomizeException;
+import com.bqlion.springboothelloworld.mapper.QuestionExtMapper;
 import com.bqlion.springboothelloworld.mapper.QuestionMapper;
 import com.bqlion.springboothelloworld.mapper.UserMapper;
 import com.bqlion.springboothelloworld.model.Question;
 import com.bqlion.springboothelloworld.model.QuestionExample;
 import com.bqlion.springboothelloworld.model.User;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.session.RowBounds;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /* *
  * Created by BqLion on 2019/7/31
@@ -28,6 +32,9 @@ public class QuestionService {
 
     @Autowired
     private UserMapper userMapper;             //组装Quesiton和user的model所以要注入依赖
+
+    @Autowired
+    private QuestionExtMapper questionExtMapper;
 
     public PaginationDTO list(Integer page, Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO();
@@ -66,7 +73,7 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public PaginationDTO list(Integer userId, Integer page, Integer size) {
+    public PaginationDTO list(long userId, Integer page, Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO();
         Integer totalPage;
 
@@ -105,7 +112,7 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public QuestionDTO getById(Integer id) {
+    public QuestionDTO getById(long id) {
         Question question = questionMapper.selectByPrimaryKey(id);
         if (question == null) {
             throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
@@ -138,12 +145,32 @@ public class QuestionService {
         }
     }
 
-    public void incView(Integer id) {
+    public void incView(long id) {
         Question question = questionMapper.selectByPrimaryKey(id);
         Question updateQuestion  = new Question();
         updateQuestion.setViewCount(question.getViewCount() +1 );
         QuestionExample questionExample = new QuestionExample();
         questionExample.createCriteria().andIdEqualTo(id);
         questionMapper.updateByExampleSelective(updateQuestion,questionExample);
+    }
+
+
+    public List<QuestionDTO> selectRelated(QuestionDTO queryDTO) {
+        if (StringUtils.isBlank(queryDTO.getTag())) {
+            return new ArrayList<>();
+        }
+        String[] tags = StringUtils.split(queryDTO.getTag(), ",");
+        String regexpTag = Arrays.stream(tags).collect(Collectors.joining("|"));
+        Question question = new Question();
+        question.setId(queryDTO.getId());
+        question.setTag(regexpTag);
+
+        List<Question> questions = questionExtMapper.selectRelated(question);
+        List<QuestionDTO> questionDTOS = questions.stream().map(q -> {
+            QuestionDTO questionDTO = new QuestionDTO();
+            BeanUtils.copyProperties(q, questionDTO);
+            return questionDTO;
+        }).collect(Collectors.toList());
+        return questionDTOS;
     }
 }

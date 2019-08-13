@@ -9,15 +9,15 @@ import org.omg.PortableInterceptor.INACTIVE;
  */
 @Data
 public class QuestionDTO {
-    private Integer id;
+    private Long  id;
     private String title;
     private String  description;
     private String tag;
     private long gmtCreate;
     private long gmtModified;
-    private Integer creator;
+    private Long creator;
     private Integer viewCount;
-    private Integer commonCount;
+    private Integer commentCount;
     private Integer likeCount;
     private User user;          //传输层的Qusition作用就是比model的question多了一个user对象
 }
