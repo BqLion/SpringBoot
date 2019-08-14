@@ -57,7 +57,7 @@
                     </li>
 
                     <li th:if="${pagination.showNext}">
-                        <a th:href="@{/(page=${pagination.page + 1})}" aria-label="Previous">
+                        <a th:href="@{/(page=${pagination.page + 1},search=${search})}" aria-label="Previous">
                             <span aria-hidden="true">&gt;</span>
                         </a>
                     </li>

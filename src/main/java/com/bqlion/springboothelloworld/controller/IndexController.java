@@ -22,10 +22,13 @@ public class IndexController {
     public String index(HttpServletRequest request,
                         Model model,
                         @RequestParam(name = "page",defaultValue = "1")Integer page,
-                        @RequestParam(name = "size",defaultValue = "5")Integer size){
+                        @RequestParam(name = "size",defaultValue = "5")Integer size,
+                        @RequestParam(name = "search",required = false)String search
+                        ){
 
-        PaginationDTO pagination = questionService.list(page,size);        //这里希望返回一个QuestionDTO,一般DTO用mapper返回，
+        PaginationDTO pagination = questionService.list(search,page,size);        //这里希望返回一个QuestionDTO,一般DTO用mapper返回，
         model.addAttribute("pagination", pagination );                    //QuestionMapper只能返回Question model.
+        model.addAttribute("search",search);
         return "index";                                                                         //加上了user的QuesitonDTO 由Question model和user model组合而成
     }
     }

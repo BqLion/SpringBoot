@@ -3,7 +3,7 @@ package com.bqlion.springboothelloworld.exception;
 /* *
  * Created by BqLion on 2019/8/10
  */
-public enum CustomizeErrorCode implements IcustomizeErrorCode {
+public enum     CustomizeErrorCode implements IcustomizeErrorCode {
 
     QUESTION_NOT_FOUND(2001, "你找到问题不在了，要不要换个试试？"),
     TARGET_PARAM_NOT_FOUND(2002, "未选中任何问题或评论进行回复"),

@@ -2,6 +2,7 @@ package com.bqlion.springboothelloworld.service;
 
 import com.bqlion.springboothelloworld.dto.PaginationDTO;
 import com.bqlion.springboothelloworld.dto.QuestionDTO;
+import com.bqlion.springboothelloworld.dto.QuestionQueryDTO;
 import com.bqlion.springboothelloworld.exception.CustomizeErrorCode;
 import com.bqlion.springboothelloworld.exception.CustomizeException;
 import com.bqlion.springboothelloworld.mapper.QuestionExtMapper;
@@ -25,7 +26,7 @@ import java.util.stream.Collectors;
  * Created by BqLion on 2019/7/31
  */
 @Service
-public class QuestionService {
+public class  QuestionService {
 
     @Autowired
     private QuestionMapper questionMapper;
@@ -36,10 +37,20 @@ public class QuestionService {
     @Autowired
     private QuestionExtMapper questionExtMapper;
 
-    public PaginationDTO list(Integer page, Integer size) {
+    public PaginationDTO list(String search,Integer page, Integer size) {
+
+        if (StringUtils.isNotBlank(search)) {
+            String[] tags = StringUtils.split(search, " ");
+            search = Arrays.stream(tags).collect(Collectors.joining("|"));
+        }
+
         PaginationDTO paginationDTO = new PaginationDTO();
         Integer totalPage;
-        Integer totalCount = (int) questionMapper.countByExample(new QuestionExample());
+
+        QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
+        questionQueryDTO.setSearch(search);
+
+        Integer totalCount = questionExtMapper.countBySearch(new QuestionQueryDTO());
 
 
         if (totalCount % size == 0) {
@@ -55,9 +66,12 @@ public class QuestionService {
             page = totalPage;
         }
         paginationDTO.setPagination(totalPage, page);
-
         Integer offset = size * (page - 1);
-        List<Question> questions = questionMapper.selectByExampleWithRowbounds(new QuestionExample(), new RowBounds(offset, size));
+        QuestionExample questionExample = new QuestionExample();
+        questionExample.setOrderByClause("gmt_create desc");
+        questionQueryDTO.setSize(size);
+        questionQueryDTO.setPage(offset);
+        List<Question> questions = questionExtMapper.selectBySearch(questionQueryDTO);
         List<QuestionDTO> questionDTOList = new ArrayList<>();
 
 
@@ -127,23 +141,30 @@ public class QuestionService {
 
     public void createOrUpdate(Question question) {
         if (question.getId() == null) {
+            // 创建
             question.setGmtCreate(System.currentTimeMillis());
             question.setGmtModified(question.getGmtCreate());
+            question.setViewCount(0);
+            question.setLikeCount(0);
+            question.setCommentCount(0);
             questionMapper.insert(question);
         } else {
+            // 更新
             Question updateQuestion = new Question();
             updateQuestion.setGmtModified(System.currentTimeMillis());
             updateQuestion.setTitle(question.getTitle());
             updateQuestion.setDescription(question.getDescription());
             updateQuestion.setTag(question.getTag());
             QuestionExample example = new QuestionExample();
-            example.createCriteria().andIdEqualTo(question.getId());
-            int update = questionMapper.updateByExampleSelective(updateQuestion, example);
-            if (update != 1) {
+            example.createCriteria()
+                    .andIdEqualTo(question.getId());
+            int updated = questionMapper.updateByExampleSelective(updateQuestion, example);
+            if (updated != 1) {
                 throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }
         }
     }
+
 
     public void incView(long id) {
         Question question = questionMapper.selectByPrimaryKey(id);

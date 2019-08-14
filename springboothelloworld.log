@@ -1,0 +1,327 @@
+2019-08-14 12:04:28.606  INFO 10736 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 10736 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 12:04:28.617  INFO 10736 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 12:04:28.708  INFO 10736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 12:04:28.708  INFO 10736 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 12:04:32.073  INFO 10736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 12:04:32.114  INFO 10736 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 12:04:32.114  INFO 10736 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 12:04:32.390  INFO 10736 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 12:04:32.390  INFO 10736 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3681 ms
+2019-08-14 12:04:33.438  INFO 10736 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 12:04:33.861  INFO 10736 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 12:04:34.122  INFO 10736 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 12:04:34.192  INFO 10736 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 12:04:34.193  INFO 10736 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 6.088 seconds (JVM running for 6.921)
+2019-08-14 12:04:41.755  INFO 10736 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 12:04:41.755  INFO 10736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 12:04:41.768  INFO 10736 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2019-08-14 12:04:41.922  INFO 10736 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 12:04:42.275  INFO 10736 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 12:33:55.346  INFO 26284 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 26284 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 12:33:55.349  INFO 26284 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 12:33:55.452  INFO 26284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 12:33:55.453  INFO 26284 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 12:33:59.610  INFO 26284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 12:33:59.668  INFO 26284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 12:33:59.669  INFO 26284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 12:33:59.901  INFO 26284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 12:33:59.902  INFO 26284 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4449 ms
+2019-08-14 12:34:01.123  INFO 26284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 12:34:01.466  INFO 26284 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 12:34:01.919  INFO 26284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 12:34:02.019  INFO 26284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 12:34:02.090  INFO 26284 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 7.216 seconds (JVM running for 7.975)
+2019-08-14 12:34:34.007  INFO 26284 --- [http-nio-8080-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 12:34:34.008  INFO 26284 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 12:34:34.025  INFO 26284 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-08-14 12:34:34.113  INFO 26284 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 12:34:34.325  INFO 26284 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 12:49:59.377  INFO 26284 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 12:49:59.378  INFO 26284 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-14 12:49:59.591  INFO 26284 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-14 12:50:00.150  INFO 26284 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 26284 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 12:50:00.151  INFO 26284 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 12:50:00.608  INFO 26284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 12:50:00.615  INFO 26284 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 12:50:00.617  INFO 26284 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 12:50:00.669  INFO 26284 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 12:50:00.670  INFO 26284 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 516 ms
+2019-08-14 12:50:01.187  INFO 26284 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 12:50:01.239  INFO 26284 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 12:50:01.456  INFO 26284 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 12:50:01.498  INFO 26284 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 12:50:01.499  INFO 26284 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 1.371 seconds (JVM running for 967.382)
+2019-08-14 12:50:01.503  INFO 26284 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-08-14 12:53:35.747  INFO 26284 --- [http-nio-8080-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 12:53:35.749  INFO 26284 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 12:53:35.753  INFO 26284 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-08-14 12:53:35.761  INFO 26284 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2019-08-14 12:53:35.770  INFO 26284 --- [http-nio-8080-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2019-08-14 14:57:03.809  INFO 29888 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 29888 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 14:57:03.812  INFO 29888 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 14:57:03.893  INFO 29888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 14:57:03.893  INFO 29888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 14:57:06.936  INFO 29888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 14:57:07.008  INFO 29888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 14:57:07.009  INFO 29888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 14:57:07.309  INFO 29888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 14:57:07.310  INFO 29888 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3416 ms
+2019-08-14 14:57:08.394  INFO 29888 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 14:57:08.598  INFO 29888 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 14:57:08.804  INFO 29888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 14:57:08.893  INFO 29888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 14:57:08.900  INFO 29888 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 5.694 seconds (JVM running for 6.433)
+2019-08-14 14:59:07.135  INFO 29888 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 14:59:07.136  INFO 29888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 14:59:07.150  INFO 29888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2019-08-14 14:59:07.299  INFO 29888 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 14:59:07.494  INFO 29888 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 14:59:47.664  WARN 29888 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:00:05.163  WARN 29888 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:01:06.984  WARN 29888 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:10:01.237  INFO 17716 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 17716 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:10:01.241  INFO 17716 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:10:01.303  INFO 17716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 15:10:01.303  INFO 17716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 15:10:04.014  INFO 17716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:10:04.048  INFO 17716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 15:10:04.049  INFO 17716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 15:10:04.190  INFO 17716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 15:10:04.191  INFO 17716 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2888 ms
+2019-08-14 15:10:05.163  INFO 17716 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:10:05.432  INFO 17716 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 15:10:05.694  INFO 17716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 15:10:05.779  INFO 17716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:10:05.782  INFO 17716 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 5.101 seconds (JVM running for 5.824)
+2019-08-14 15:10:05.836  INFO 17716 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 15:10:05.836  INFO 17716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 15:10:05.846  INFO 17716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-08-14 15:10:05.934  INFO 17716 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 15:10:06.183  INFO 17716 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 15:10:20.522  WARN 17716 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:13:39.653  INFO 31512 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 31512 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:13:39.657  INFO 31512 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:13:39.745  INFO 31512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 15:13:39.746  INFO 31512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 15:13:42.994  INFO 31512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:13:43.035  INFO 31512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 15:13:43.035  INFO 31512 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 15:13:43.255  INFO 31512 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 15:13:43.256  INFO 31512 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3510 ms
+2019-08-14 15:13:44.060  INFO 31512 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:13:44.314  INFO 31512 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 15:13:44.547  INFO 31512 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 15:13:44.623  INFO 31512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:13:44.628  INFO 31512 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 5.535 seconds (JVM running for 7.301)
+2019-08-14 15:13:46.206  INFO 31512 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 15:13:46.207  INFO 31512 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 15:13:46.220  INFO 31512 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2019-08-14 15:13:46.345  INFO 31512 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 15:13:46.527  INFO 31512 --- [http-nio-8080-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 15:13:46.621  WARN 31512 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:13:56.120  WARN 31512 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:14:14.163  INFO 31512 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:14:14.164  INFO 31512 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-14 15:14:14.181  INFO 31512 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-14 15:14:17.958  INFO 29972 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 29972 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:14:17.964  INFO 29972 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:14:18.097  INFO 29972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 15:14:18.098  INFO 29972 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 15:14:22.504  INFO 29972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:14:22.553  INFO 29972 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 15:14:22.554  INFO 29972 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 15:14:22.808  INFO 29972 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 15:14:22.809  INFO 29972 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4711 ms
+2019-08-14 15:14:24.244  INFO 29972 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:14:24.757  INFO 29972 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 15:14:25.168  INFO 29972 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 15:14:25.298  INFO 29972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:14:25.309  INFO 29972 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 8.049 seconds (JVM running for 9.452)
+2019-08-14 15:14:25.406  INFO 29972 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 15:14:25.407  INFO 29972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 15:14:25.424  INFO 29972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-08-14 15:14:25.779  INFO 29972 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 15:14:26.100  INFO 29972 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 15:14:34.014  WARN 29972 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:16:08.989  INFO 29972 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:16:08.993  INFO 29972 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-14 15:16:09.053  INFO 29972 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-14 15:16:13.266  INFO 30992 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 30992 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:16:13.276  INFO 30992 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:16:13.382  INFO 30992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 15:16:13.382  INFO 30992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 15:16:17.056  INFO 30992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:16:17.102  INFO 30992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 15:16:17.102  INFO 30992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 15:16:17.346  INFO 30992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 15:16:17.346  INFO 30992 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3963 ms
+2019-08-14 15:16:18.360  INFO 30992 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:16:19.040  INFO 30992 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 15:16:19.570  INFO 30992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 15:16:19.845  INFO 30992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:16:19.954  INFO 30992 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 7.41 seconds (JVM running for 9.134)
+2019-08-14 15:16:20.137  INFO 30992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 15:16:20.138  INFO 30992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 15:16:20.161  INFO 30992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2019-08-14 15:16:20.354  INFO 30992 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 15:16:20.667  INFO 30992 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 15:16:43.089  WARN 30992 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s420ms269µs475ns).
+2019-08-14 15:18:37.291  INFO 30992 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:18:37.294  INFO 30992 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-14 15:18:37.313  INFO 30992 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-14 15:19:21.348  INFO 22264 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 22264 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:19:21.350  INFO 22264 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:19:21.408  INFO 22264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 15:19:21.409  INFO 22264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 15:19:24.532  INFO 22264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:19:24.586  INFO 22264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 15:19:24.587  INFO 22264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 15:19:24.783  INFO 22264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 15:19:24.784  INFO 22264 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3375 ms
+2019-08-14 15:19:25.614  INFO 22264 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:19:25.843  INFO 22264 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 15:19:26.056  INFO 22264 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 15:19:26.127  INFO 22264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:19:26.131  INFO 22264 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 5.221 seconds (JVM running for 5.987)
+2019-08-14 15:19:30.043  INFO 22264 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 15:19:30.044  INFO 22264 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 15:19:30.053  INFO 22264 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-08-14 15:19:30.146  INFO 22264 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 15:19:30.356  INFO 22264 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 15:19:44.105  WARN 22264 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.bqlion.springboothelloworld.exception.CustomizeException: 你找到问题不在了，要不要换个试试？]
+2019-08-14 15:19:55.784  WARN 22264 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.bqlion.springboothelloworld.exception.CustomizeException: 你找到问题不在了，要不要换个试试？]
+2019-08-14 15:20:04.888  WARN 22264 --- [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:21:11.008  INFO 20748 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 20748 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:21:11.018  INFO 20748 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:21:11.393  INFO 20748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 15:21:11.395  INFO 20748 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 15:21:13.761  INFO 20748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:21:13.810  INFO 20748 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 15:21:13.810  INFO 20748 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 15:21:14.035  INFO 20748 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 15:21:14.035  INFO 20748 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2639 ms
+2019-08-14 15:21:14.806  INFO 20748 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:21:15.029  INFO 20748 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 15:21:15.257  INFO 20748 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 15:21:15.341  INFO 20748 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:21:15.347  INFO 20748 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 5.141 seconds (JVM running for 6.69)
+2019-08-14 15:21:15.481  INFO 20748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 15:21:15.481  INFO 20748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 15:21:15.491  INFO 20748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-08-14 15:21:15.594  INFO 20748 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 15:21:15.811  INFO 20748 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 15:21:15.887  WARN 20748 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:21:59.232  WARN 20748 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:24:48.883  INFO 20748 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:24:48.886  INFO 20748 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-14 15:24:48.936  INFO 20748 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-14 15:24:51.663  INFO 25524 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 25524 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:24:51.667  INFO 25524 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:24:51.735  INFO 25524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 15:24:51.735  INFO 25524 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 15:31:37.964  INFO 27888 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 27888 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:31:37.968  INFO 27888 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:31:38.035  INFO 27888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 15:31:38.036  INFO 27888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 15:31:40.853  INFO 27888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:31:40.915  INFO 27888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 15:31:40.916  INFO 27888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 15:31:41.162  INFO 27888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 15:31:41.163  INFO 27888 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3127 ms
+2019-08-14 15:31:42.027  INFO 27888 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:31:42.308  INFO 27888 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 15:31:42.908  INFO 27888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 15:31:43.050  INFO 27888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:31:43.056  INFO 27888 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 5.69 seconds (JVM running for 7.028)
+2019-08-14 15:31:43.234  INFO 27888 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 15:31:43.235  INFO 27888 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 15:31:43.246  INFO 27888 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-08-14 15:31:43.401  INFO 27888 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 15:31:44.146  INFO 27888 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 15:31:52.860  WARN 27888 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:33:08.928  INFO 27888 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:33:08.932  INFO 27888 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-14 15:33:08.978  INFO 27888 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-14 15:33:12.458  INFO 24360 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 24360 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:33:12.461  INFO 24360 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:33:12.569  INFO 24360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 15:33:12.570  INFO 24360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 15:33:16.788  INFO 24360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:33:16.850  INFO 24360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 15:33:16.851  INFO 24360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 15:33:17.072  INFO 24360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 15:33:17.073  INFO 24360 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4502 ms
+2019-08-14 15:33:18.170  INFO 24360 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:33:18.547  INFO 24360 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 15:33:19.067  INFO 24360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 15:33:19.159  INFO 24360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:33:19.165  INFO 24360 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 7.465 seconds (JVM running for 8.605)
+2019-08-14 15:33:19.578  INFO 24360 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 15:33:19.579  INFO 24360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 15:33:19.597  INFO 24360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-08-14 15:33:19.751  INFO 24360 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 15:33:20.003  INFO 24360 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 15:33:20.093  WARN 24360 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:33:32.111  WARN 24360 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:34:11.289  INFO 24360 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:34:11.291  INFO 24360 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-14 15:34:11.304  INFO 24360 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-14 15:34:15.524  INFO 31544 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 31544 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:34:15.532  INFO 31544 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:34:15.647  INFO 31544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 15:34:15.647  INFO 31544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 15:34:19.390  INFO 31544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:34:19.442  INFO 31544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 15:34:19.442  INFO 31544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 15:34:19.734  INFO 31544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 15:34:19.735  INFO 31544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4088 ms
+2019-08-14 15:34:20.989  INFO 31544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:34:21.626  INFO 31544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 15:34:22.813  INFO 31544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 15:34:22.945  INFO 31544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:34:22.960  INFO 31544 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 8.392 seconds (JVM running for 9.701)
+2019-08-14 15:34:23.075  INFO 31544 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 15:34:23.076  INFO 31544 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 15:34:23.101  INFO 31544 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-08-14 15:34:23.283  INFO 31544 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 15:34:23.546  INFO 31544 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 15:34:29.028  WARN 31544 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:38:58.518  WARN 31544 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:39:50.475  INFO 31544 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:39:50.476  INFO 31544 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-14 15:39:50.686  INFO 31544 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-08-14 15:39:51.471  INFO 31544 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 31544 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:39:51.472  INFO 31544 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:39:52.196  INFO 31544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:39:52.199  INFO 31544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 15:39:52.199  INFO 31544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 15:39:52.242  INFO 31544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 15:39:52.242  INFO 31544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 765 ms
+2019-08-14 15:39:52.562  INFO 31544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:39:52.611  INFO 31544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 15:39:52.672  INFO 31544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 15:39:52.696  INFO 31544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:39:52.697  INFO 31544 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 1.274 seconds (JVM running for 339.438)
+2019-08-14 15:39:52.699  INFO 31544 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-08-14 15:43:12.679  INFO 31544 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:43:18.157  INFO 24600 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 24600 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-14 15:43:18.160  INFO 24600 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-14 15:43:18.217  INFO 24600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-14 15:43:18.218  INFO 24600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-14 15:43:21.376  INFO 24600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-14 15:43:21.414  INFO 24600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-14 15:43:21.415  INFO 24600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-14 15:43:21.637  INFO 24600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-14 15:43:21.638  INFO 24600 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3420 ms
+2019-08-14 15:43:22.261  INFO 24600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-14 15:43:22.493  INFO 24600 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-14 15:43:22.691  INFO 24600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-14 15:43:22.771  INFO 24600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-14 15:43:22.775  INFO 24600 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 5.048 seconds (JVM running for 5.718)
+2019-08-14 15:43:22.835  INFO 24600 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-14 15:43:22.835  INFO 24600 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-14 15:43:22.845  INFO 24600 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-08-14 15:43:22.940  INFO 24600 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-14 15:43:23.163  INFO 24600 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-08-14 15:43:23.239  WARN 24600 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
+2019-08-14 15:43:31.527  WARN 24600 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: ""]
