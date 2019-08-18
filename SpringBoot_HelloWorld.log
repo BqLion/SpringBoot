@@ -1,0 +1,14 @@
+2019-08-16 16:09:26.609  INFO 7264 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Starting SpringboothelloworldApplication on BqLion with PID 7264 (D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld\target\classes started by Bq Lion in D:\Workplace\JavaWorkplace\Spring\SpringBoot_HelloWorld)
+2019-08-16 16:09:26.612  INFO 7264 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : No active profile set, falling back to default profiles: default
+2019-08-16 16:09:26.742  INFO 7264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-16 16:09:26.743  INFO 7264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-08-16 16:09:30.293  INFO 7264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 23 (http)
+2019-08-16 16:09:30.378  INFO 7264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-16 16:09:30.379  INFO 7264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-16 16:09:31.129  INFO 7264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-16 16:09:31.130  INFO 7264 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4387 ms
+2019-08-16 16:09:32.341  INFO 7264 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-16 16:09:32.542  INFO 7264 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-08-16 16:09:32.792  INFO 7264 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-08-16 16:09:32.864  INFO 7264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 23 (http) with context path ''
+2019-08-16 16:09:32.868  INFO 7264 --- [restartedMain] c.b.s.SpringboothelloworldApplication    : Started SpringboothelloworldApplication in 6.818 seconds (JVM running for 7.606)

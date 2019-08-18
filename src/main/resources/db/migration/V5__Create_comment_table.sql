@@ -1,14 +1,14 @@
 create table comment
 (
-	id BIGINT,
-	parent_id BIGINT,
-	type INT,
+	id bigint,
+	parent_id bigint,
+	type int,
 	commentator int,
-	gmt_create BIGINT,
-	gmt_modified BIGINT
+	gmt_create bigint,
+	gmt_modified bigint
 );
 
-comment on column comment.parent_id is '父类ID';
+comment on column comment.parent_id is '父类id';
 
 comment on column comment.type is '父类类型';
 
