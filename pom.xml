@@ -24,6 +24,10 @@
                 <db.url>jdbc:mysql://173.194.109.240:3306/test</db.url>
                 <db.user>root</db.user>
                 <db.password>math1122</db.password>
+                <property name="maxActive" value="100"></property>
+                <property name="maxIdle" value="30"></property>
+                <property name="maxWait" value="-1"></property>
+                <property name="defaultAutoCommit" value="true"></property>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -111,8 +115,7 @@
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
-                <version>5.2.4</version>
-                <configuration>
+q                <configuration>
                     <url> jdbc:mysql://173.194.109.240:3306/test</url>
                     <user>root</user>
                     <password>math1122</password>

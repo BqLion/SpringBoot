@@ -35,7 +35,7 @@ public class AuthorizeController {
     @Value("82469b03c5001669927d4ce154c3f4d37c226af8")
     private String clientSecret;
 
-    @Value("http://35.201.136.9/callback")
+    @Value("http://35.201.136.9/callback/callback")
     private String redirectUri;
 
 
@@ -58,7 +58,7 @@ public class AuthorizeController {
             user.setToken(token);
             user.setName(githubUser.getName());
             user.setAccountId(String.valueOf(githubUser.getId()));
-            user.setAvatarurl((githubUser.getAvatarUrl()));
+            user.setAvatarurl((githubUser.getAvatarurl()));
             UserService.createOrUpdate(user);               //之前逻辑有误，如果是同一用户则不需要新建，只需更新即可
             response.addCookie(new Cookie("token", token));     //将userToken写入cookie中
             return "redirect:/";
