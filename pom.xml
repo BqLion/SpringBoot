@@ -115,7 +115,7 @@
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
-q                <configuration>
+                <configuration>
                     <url> jdbc:mysql://173.194.109.240:3306/test</url>
                     <user>root</user>
                     <password>math1122</password>
