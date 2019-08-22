@@ -28,6 +28,7 @@
                 <property name="maxIdle" value="30"></property>
                 <property name="maxWait" value="-1"></property>
                 <property name="defaultAutoCommit" value="true"></property>
+                <property name="maxIdleTime" value="20"></property>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
