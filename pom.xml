@@ -24,11 +24,6 @@
                 <db.url>jdbc:mysql://173.194.109.240:3306/test</db.url>
                 <db.user>root</db.user>
                 <db.password>math1122</db.password>
-                <property name="maxActive" value="100"></property>
-                <property name="maxIdle" value="30"></property>
-                <property name="maxWait" value="-1"></property>
-                <property name="defaultAutoCommit" value="true"></property>
-                <property name="maxIdleTime" value="20"></property>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -102,7 +97,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.24</version>
+            <version>5.1.45</version>
         </dependency>
 
     </dependencies>
@@ -116,8 +111,9 @@
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
+                <version>5.2.4</version>
                 <configuration>
-                    <url> jdbc:mysql://173.194.109.240:3306/test</url>
+                    <url> jdbc:mysql://173.194.109.240/test</url>
                     <user>root</user>
                     <password>math1122</password>
                 </configuration>
@@ -125,7 +121,7 @@
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.24</version>
+                        <version>5.1.45</version>
                     </dependency>
                     <dependency>
                         <groupId>com.h2database</groupId>
@@ -145,17 +141,6 @@
                 </configuration>
 
                 <dependencies>
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.24</version>
-                    </dependency>
-
-                    <dependency>
-                        <groupId>com.h2database</groupId>
-                        <artifactId>h2</artifactId>
-                        <version>1.4.196</version>
-                    </dependency>
                 </dependencies>
             </plugin>
         </plugins>
