@@ -21,7 +21,7 @@
         <profile>
             <id>dev</id>
             <properties>
-                <db.url>jdbc:mysql://173.194.109.240:3306/test</db.url>
+                <db.url>jdbc:mysql://localhost:3306/springboot</db.url>
                 <db.user>root</db.user>
                 <db.password>math1122</db.password>
             </properties>
@@ -113,7 +113,7 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>5.2.4</version>
                 <configuration>
-                    <url> jdbc:mysql://173.194.109.240/test</url>
+                    <url>jdbc:mysql://localhost:3306/springboot</url>
                     <user>root</user>
                     <password>math1122</password>
                 </configuration>
@@ -139,8 +139,12 @@
                 <verbose>true</verbose>
                 <overwrite>true</overwrite>
                 </configuration>
-
                 <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>5.1.45</version>
+                    </dependency>
                 </dependencies>
             </plugin>
         </plugins>

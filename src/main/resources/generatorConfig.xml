@@ -9,7 +9,7 @@
         <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"></plugin>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://173.194.109.240:3306/test"
+                        connectionURL="jdbc:mysql://localhost:3306/springboot"
                         userId="root"
                         password="math1122">
         </jdbcConnection>

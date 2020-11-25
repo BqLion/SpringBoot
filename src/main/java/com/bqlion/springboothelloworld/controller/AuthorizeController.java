@@ -35,7 +35,7 @@ public class AuthorizeController {
     @Value("82469b03c5001669927d4ce154c3f4d37c226af8")
     private String clientSecret;
 
-    @Value("http://35.229.184.182/callback")
+    @Value("http://localhost:8080/callback")
     private String redirectUri;
 
 
