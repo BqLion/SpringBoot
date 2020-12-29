@@ -98,3 +98,5 @@ public class PublishController {
         return "redirect:/";                //发布成功就返回首页
     }
 }
+
+//test for git branch
